@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+:root {
+    --primary-color: pink;
+    --secondary-color: blue;
+    --primary-text-color: #ffffff;
+}
+
+body{
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;  
+}
+
+.navbar-centered .navbar-nav {
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+}
+.navbar-centered .nav-item {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.bg-custom{
+   background-color: #fec5e5;;
+}
+
+.carousel-item {
+    height: 60vh; /* Adjust this value as needed */
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-item{
+    position:absolute;
+}
+
+.logo{
+    height:100px; width:100px
+}
+
+ul li a{
+    color:maroon;
+    text-decoration: none;
+}
+
+ul li a:hover{
+    color:grey;
+    text-decoration: none;
+}
+
+a{
+    color:maroon;
+    text-decoration: none;
+}
+
+a:hover{
+    color:grey;
+    text-decoration: none;
+}
+
+img{
+    border-radius: 20px;
+}
+
+.carousel-item {
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+.carousel-caption {
+    padding: 10px;
+    background-color: rgba(15, 15, 15, 0.8);
+    color: black;
+}
+.cards .card img {
+    height: 200px;
+    object-fit: cover;
+}
