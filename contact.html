@@ -48,71 +48,23 @@
         
         <div class="row">
             <!-- Contact Info -->
-            <div class="col-md-6 mb-4">
+            <div class="col-md-12 mb-4">
                 <h4>Get in Touch</h4>
                 <p>If you have any questions, feel free to contact us using the form or through the contact details below:</p>
-                <p><strong>Email:</strong> manoharamdecor02@outlook.com </p>
-                <p><strong>Phone:</strong> +91 9373168131</p>
-                <p><strong>Address:</strong> Lonavala, Maharashtra, India</p>
+                <p> <ion-icon name="mail"></ion-icon> <strong>Email:</strong> manoharamdecor02@outlook.com </p>
+                <p> <ion-icon name="call"></ion-icon> <strong>Phone:</strong> +91 9373168131</p>
+                <p> <ion-icon name="business"></ion-icon> <strong>Address:</strong> Lonavala, Maharashtra, India</p>
                 
                 <h5>Follow Us</h5>
                 <p>
-                    <a href="https://wa.me/9373168131?text=Hello%2C%20I%20am%20interested%20in%20your%20gift%20hampers%21" target="_blank">WhatsApp</a> | 
-                    <a href="https://www.instagram.com/aksh_thestranger02/?hl=en">Instagram</a> | 
+                    <a href="https://wa.me/9373168131?text=Hello%2C%20I%20am%20interested%20in%20your%20gift%20hampers%21" target="_blank">
+                        <ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a> | 
+                    <a href="https://www.instagram.com/aksh_thestranger02/?hl=en">
+                        <ion-icon name="logo-instagram"></ion-icon> Instagram</a>
                 </p>
             </div>
-            
-            <!-- Contact Form -->
-            <div class="col-md-6">
-                <h4>Send Us a Message</h4>
-                <form>
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Your Name</label>
-                        <input type="text" class="form-control" id="name" name="name" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email Address</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Your Message</label>
-                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                    </div>
-                    <div class="mb-3 text-center">
-                        <button id="submit" class="btn btn-primary">Submit</button>
-                    </div>
-                </form>
-            </div>
         </div>
-    </div>
-
-    <script src="assets/js/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("#submit").click(function(){
-                event.preventDefault();
-                datatosend = {
-                    name: $("#name").val() ,
-                    email: $("#email").val() ,
-                    user_msg: $("#message").val()
-                };
-                console.log(datatosend);
-                $.ajax({
-                    url: "queries_ajax.php",
-                    method: "POST" ,
-                    data: datatosend,
-                    success: function(response) {
-                        alert(response);
-                        window.location.href='contact.html';   
-                    }
-                });
-            });
-        });
-    </script>
-
-
-
-
+    
     <footer class="bg-custom py-4">
         <div class="container">
             <div class="row">
