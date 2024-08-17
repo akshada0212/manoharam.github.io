@@ -97,10 +97,21 @@
                     Make your special moments more special with <strong>Manoharam!</strong>
                     With Manoharam, order your gift hamper, and get it delivered to your doorstep.
                 </p>
-                <button class="btn btn-primary px-3 py-2">Order Now</button>
+                <button class="btn btn-primary px-3 py-2" onclick="warning()">Order Now</button>
             </div>
         </div>
     </div>
+
+    <script>
+        function warning()
+        {
+            var c = confirm("You are proceeding towards Google Forms to place your order. Click to continue");
+            if(c)
+            {
+                window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfA2jkw7G9ixUldNd5chVAOhc09LS9S2kkELKPbW8TFOZwgog/viewform';
+            }
+        }
+    </script>
 
     <hr>
 
@@ -120,7 +131,7 @@
                     <div class="col-md-3 cards">
                         <div class="card">
                             <div class="card-body">
-                                <img src="https://i.pinimg.com/564x/2b/53/51/2b5351daa218054547ce4fb73bb4a9bc.jpg" class="img-fluid">
+                                <center><img src="https://i.pinimg.com/564x/2b/53/51/2b5351daa218054547ce4fb73bb4a9bc.jpg" class="img-fluid"></center>
                                 <h4 class="text-center my-2">Bollywood</h4>
                             </div>
                         </div>
@@ -128,7 +139,7 @@
                     <div class="col-md-3 cards">
                         <div class="card">
                             <div class="card-body">
-                                <img src="https://i.pinimg.com/736x/4e/24/8b/4e248bf509373c777ea34491c424916f.jpg" class="img-fluid">
+                                <center><img src="https://i.pinimg.com/736x/4e/24/8b/4e248bf509373c777ea34491c424916f.jpg" class="img-fluid"></center>
                                 <h4 class="text-center my-2">South Cinema</h4>
                             </div>
                         </div>
@@ -136,7 +147,7 @@
                     <div class="col-md-3 cards">
                         <div class="card">
                             <div class="card-body">
-                                <img src="https://i.pinimg.com/564x/1b/e0/2c/1be02c45cca65f2bf5b47204cf53df73.jpg" class="img-fluid">
+                                <center><img src="https://i.pinimg.com/564x/1b/e0/2c/1be02c45cca65f2bf5b47204cf53df73.jpg" class="img-fluid"></center>
                                 <h4 class="text-center my-2">Music Bands</h4>
                             </div>
                         </div>
@@ -148,7 +159,7 @@
             <div class="col-md-3 cards">
                 <div class="card">
                     <div class="card-body">
-                        <img src="https://i.pinimg.com/564x/72/cf/3c/72cf3c1cdf3ed0f5bf8b5ae2ac95d21e.jpg" class="img-fluid">
+                        <center><img src="https://i.pinimg.com/564x/72/cf/3c/72cf3c1cdf3ed0f5bf8b5ae2ac95d21e.jpg" class="img-fluid"></center>
                         <h4 class="text-center my-2">Flowers</h4>
                     </div>
                 </div>
@@ -156,7 +167,7 @@
             <div class="col-md-3 cards">
                 <div class="card">
                     <div class="card-body">
-                        <img src="https://i.pinimg.com/236x/76/e0/3e/76e03e36a226bfed3206e62eb8c5feeb.jpg" class="img-fluid">
+                        <center><img src="https://i.pinimg.com/236x/76/e0/3e/76e03e36a226bfed3206e62eb8c5feeb.jpg" class="img-fluid"></center>
                         <h4 class="text-center my-2">Cultural</h4>
                     </div>
                 </div>
@@ -164,25 +175,69 @@
             <div class="col-md-3 cards">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="text-center my-2">And many more....</h4>
+                        <center><img src="https://i.pinimg.com/474x/b6/83/69/b68369060feab9e5c37e34f4db2da7ce.jpg" class="img-fluid"></center>
+                        <h4 class="text-center my-2">Rap Music</h4>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3"></div>
+            <div class="col-md-3 cards">
+                <div class="card">
+                    <div class="card-body">
+                        <center><img src="https://i.pinimg.com/236x/d5/d4/bb/d5d4bb7e8a83e3cc20f3383e4ca3e5c7.jpg" class="img-fluid"></center>
+                        <h4 class="text-center my-2">Cooking and Food</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 cards">
+                <div class="card">
+                    <div class="card-body">
+                        <center><img src="https://i.pinimg.com/236x/9f/66/41/9f66414eea84778d2140bd43aaf2b4d6.jpg" class="img-fluid"></center>
+                        <h4 class="text-center my-2">Vintage</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 cards">
+                <div class="card">
+                    <div class="card-body">
+                        <center><img src="https://i.pinimg.com/236x/4d/56/64/4d56649128e485497c9ecfbfd0e7266a.jpg" class="img-fluid"></center>
+                        <h4 class="text-center my-2">Animals</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 cards">
+                <div class="card">
+                    <div class="card-body">
+                        <center><img src="https://i.pinimg.com/236x/fe/e9/e9/fee9e9f84adde0350fdbcf76c987236b.jpg" class="img-fluid"></center>
+                        <h4 class="text-center my-2">Beauty and Self Care</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 cards">
+                <div class="card">
+                    <div class="card-body">
+                        <center><img src="https://i.pinimg.com/236x/8e/8f/28/8e8f289ea8daf1a118ce333495bfe091.jpg" class="img-fluid"></center>
+                        <h4 class="text-center my-2">And Much more!</h4>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <hr>
+    
 
     <div class="container my-4">
         <div class="row">
             <div class="col-md-6">
-                <h1 class="text-center display-5">Customization? We are in!</h1><br>
+                <h1 class="display-5">Customization? We are in!</h1><br>
                 <p>
-                    At Manoharam, if you don't wish to purchase the gift hamper the way it is,
-                    and want to give your own style, we do that too!
-                    <br>Manoharam provides customization on all our gift hampers, to give our customers
+                    Manoharam provides customization on all our gift hampers, to give our customers
                     a seamless and connective experience! 
+                    <br>
+                    We try our best and we have designed the order form so as we can provide our customers
+                    maximum customization.
                 </p>
             </div>
             <div class="col-md-6">
@@ -196,56 +251,20 @@
     <div class="container my-4">
         <div class="row">
             <div class="col-md-12">
-                <h1>Have doubts?</h1>
-                <p>Do you have any doubts? Please fill out this form and we will revert back to you shortly</p><br>
-                <form>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <label><strong>Your name</strong></label>
-                            <input type="text" class="form-control" id="name" placeholder="Your Name">
-                        </div>
-                        <div class="col-md-6">
-                            <label><strong>Your Email</strong></label>
-                            <input type="text" class="form-control" id="email" placeholder="info@example.com">
-                        </div>
-                    </div>
-                    <br>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <label><strong>Your Message</strong></label>
-                            <textarea class="form-control" id="message" placeholder="Your message here"></textarea>
-                        </div>
-                        <div class="col-md-6">
-                            <button class="btn btn-primary" id="submit">Submit</button>
-                        </div>
-                    </div>
-                </form>
+                <p>
+                    <b>Before you order, please note:</b>
+                    <ol>
+                        <li>The order with all your desirable data will be placed and reviewed by the admin.</li>
+                        <li>The admin will <b style="color:green">approve</b> or <b style="color:red">reject</b> your order or get in touch with you if necessary.</li>
+                        <li>You will get an email whether your order is approved or rejected.</li>
+                        <li>If the order is approved, you will be sent an payment code attached to the email.</li>
+                        <li>We currently accept <b>ONLY</b> UPI payments on platforms like google pay, paytm etc.</li>
+                        <li>Your order will be confirmed <b>ONLY IF</b> Payment is successfuly done.</li>
+                    </ol>
+                </p>
             </div>
         </div>
     </div>
-
-    <script src="assets/js/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("#submit").click(function(){
-                event.preventDefault();
-                datatosend = {
-                    name: $("#name").val() ,
-                    email: $("#email").val() ,
-                    user_msg: $("#message").val()
-                };
-                console.log(datatosend);
-                $.ajax({
-                    url: "queries_ajax.php",
-                    method: "POST" ,
-                    data: datatosend,
-                    success: function(response) {
-                        alert(response);   
-                    }
-                });
-            });
-        });
-    </script>
 
     <footer class="bg-custom py-4">
         <div class="container">
