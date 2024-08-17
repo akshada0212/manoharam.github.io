@@ -72,88 +72,29 @@
 
         <div class="row">
             <div class="col-md-6">
-                <h2>Gift Hamper Details</h2>
-                <form id="orderForm" enctype="multipart/form-data">
-
-                    <div class="mb-3">
-                        <label for="description" class="form-label">Occasion <span style="color:red">*</span></label>
-                        <input type="text" class="form-control" id="occasion" placeholder="Ex. Birthday, Cultural Programme etc." required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="description" class="form-label">How you want your gift hamper to be? (Give a description) <span style="color:red">*</span></label>
-                        <textarea class="form-control" id="description" name="description" rows="4" required></textarea>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="description" class="form-label">Box Size <span style="color:red">*</span></label>
-                        <select id="size" class="form-control" required>
-                            <option value="small">Small</option>
-                            <option value="medium">Medium</option>
-                            <option value="large">Large</option>
-                            <option value="custom">Custom</option>
-                        </select>
-                        <input class="form-control" type="text" id="custom-size" placeholder="If custom size selected, enter box dimensions">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="description" class="form-label">What do you want your box color to look like? <span style="color:red">*</span></label>
-                        <input type="text" class="form-control" id="box-color" placeholder="Ex. Pink, Sky Blue etc." required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="description" class="form-label">Apply any theme to the box? (If no, type "none") <span style="color:red">*</span></label>
-                        <input type="text" class="form-control" id="theme" placeholder="Ex. Anime, Hollywood etc." required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="description" class="form-label">List gift items to be placed in gift hamper<span style="color:red">*</span></label>
-                        <textarea class="form-control" id="hamper-items" rows="4" required></textarea>
-                    </div>
-                    
-                    <!-- File Upload -->
-                    <div class="mb-3">
-                        <label for="sampleImages" class="form-label">Upload any Sample Images (Optional)</label>
-                        <input type="file" class="form-control" id="sampleImages" name="sampleImages[]" accept="image/*" multiple >
-                    </div>
-                
+                <h3>Click on the button aside to place your order:</h3>
             </div>
             <div class="col-md-6">
-                <h2>Billing and Shipping Details</h2>
-
-                <div class="mb-3">
-                    <label for="description" class="form-label">Your Name<span style="color:red">*</span></label>
-                    <input type="text" class="form-control" id="name-of-user" required> 
-                </div>
-
-                <div class="mb-3">
-                    <label for="description" class="form-label">Enter Address<span style="color:red">*</span></label>
-                    <textarea class="form-control" id="address" rows="4" required></textarea>
-                </div>
-
-                <div class="mb-3">
-                    <label for="description" class="form-label">Phone Number<span style="color:red">*</span></label>
-                    <input type="text" class="form-control" id="phone" required> 
-                </div>
-
-                <div class="mb-3">
-                    <label for="description" class="form-label">Email <span style="color:red">*</span></label>
-                    <input type="text" class="form-control" id="email" required> 
-                </div>
-
-                <!-- Submit Button -->
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-primary">Confirm and Place Order</button>
-                    </div>
-                </form>
-
+                <button onclick="warning()" class="btn btn-primary">
+                    Click Here to Place an Order
+                </button>
             </div>
-
-            
         </div>
+        
     </div>
     <div style="padding:20px;background-image: url('https://i.pinimg.com/236x/7d/af/6a/7daf6ab13985df98ca2471af7ba800b3.jpg');">
     </div>
+
+    <script>
+        function warning()
+        {
+            var c = confirm("You are proceeding towards Google Forms to place your order. Click to continue");
+            if(c)
+            {
+                window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfA2jkw7G9ixUldNd5chVAOhc09LS9S2kkELKPbW8TFOZwgog/viewform';
+            }
+        }
+    </script>
 
 
     <footer class="bg-custom py-4">
